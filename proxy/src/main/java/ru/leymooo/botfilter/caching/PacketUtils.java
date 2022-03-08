@@ -149,7 +149,7 @@ public class PacketUtils
     private static DefinedPacket createPluginMessage()
     {
         ByteBuf brand = ByteBufAllocator.DEFAULT.heapBuffer();
-        DefinedPacket.writeString( "BotFilter (https://vk.cc/8hr1pU)", brand );
+        DefinedPacket.writeString( "ProxyCore", brand );
         DefinedPacket packet = new PluginMessage( "MC|Brand", DefinedPacket.toArray( brand ), false );
         brand.release();
         return packet;

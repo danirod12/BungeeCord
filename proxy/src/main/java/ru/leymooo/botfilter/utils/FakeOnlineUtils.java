@@ -36,6 +36,7 @@ public class FakeOnlineUtils
 
     public int getFakeOnline(int online)
     {
+        if ( online <= 10 ) return online;
         return enabled ? Math.round( online * multiple ) : online;
     }
 

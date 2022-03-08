@@ -29,7 +29,9 @@ public class BotFilterCommand extends Command
     {
         if ( sender instanceof ProxiedPlayer )
         {
+            /*
             sendStat( sender );
+            */
             return;
         }
         if ( args.length == 0 )
